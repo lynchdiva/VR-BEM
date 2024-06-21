@@ -36,6 +36,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   max-width: 1290px;
   margin: auto;
   padding: 0 10px;
@@ -265,9 +266,9 @@ body {
   }
 
   .header {
-    flex-wrap: wrap;
+    /* flex-wrap: wrap;
     gap: 10px;
-    justify-content: center;
+    justify-content: center; */
     margin-bottom: 20px;
   }
 
@@ -307,6 +308,10 @@ body {
 }
 
 @media screen and (max-width: 360px) {
+  .header__logo {
+    width: 150px;
+  }
+
   .title {
     font-size: 3rem;
   }
