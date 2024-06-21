@@ -19,12 +19,12 @@ body {
   height: 100%;
 }
 
-/* ======================FIRST PAGE============================== */
+/* ======================MAIN PAGE============================== */
 .page {
   max-width: 1440px;
   min-width: 320px;
   margin: auto;
-  padding: 8% 0 5%;
+  padding: 6% 0 3%;
 
   font-family: "Roboto Slab";
   font-size: 2rem;
@@ -95,7 +95,7 @@ body {
   font-size: 3.5rem;
 }
 
-nav {
+.section-introduse__nav {
   grid-row: 5;
 }
 
@@ -126,9 +126,110 @@ nav {
   object-fit: cover;
 }
 
-/* ======================END FIRST PAGE============================== */
+/* ======================END MAIN PAGE============================== */
+
+/* =========================BENEFITS PAGE========================= */
+.section-benefits {
+  max-width: 1240px;
+  padding-top: 5%;
+}
+
+.section-benefits__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 365px));
+  grid-template-rows: repeat(2, min-content);
+  justify-content: center;
+  column-gap: 70px;
+  row-gap: 10px;
+  padding: 2% 0 5%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0 5px;
+}
+
+.card__background {
+  height: 233px;
+  padding: 0 10px;
+  background-color: #ec615b;
+}
+
+.card__img {
+  max-width: 100%;
+}
+
+.card__img_directions_left-bottom {
+  position: relative;
+  top: 5%;
+  left: 5%;
+}
+
+.card__subtitle {
+  margin-bottom: 0;
+
+  font-family: "Intro";
+  font-size: 30px;
+  line-height: 120%;
+  color: #000;
+}
+
+.card__text {
+  margin-top: 0;
+}
+
+.card__subtitle_white {
+  color: #fff;
+}
+
+.card__form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-top: 15px;
+}
+
+.card__label {
+  position: absolute;
+  top: -100%;
+  width: 0;
+  height: 0;
+}
+
+.card__contact {
+  width: 97%;
+  height: 50px;
+  align-self: center;
+
+  border: none;
+}
+
+.button_medium {
+  width: 135px;
+  height: 38px;
+}
+
+.section-benefits__nav {
+  max-width: 540px;
+}
+
+.list__link_black {
+  color: #000;
+}
 
 /* =======================MEDIA QUARIES============================== */
+
+@media screen and (max-width: 1349px) {
+  .title_center {
+    text-align: center;
+  }
+
+  .section-benefits__nav {
+    margin: auto;
+  }
+}
 
 @media screen and (max-width: 1149px) {
   .main {
@@ -154,9 +255,13 @@ nav {
   }
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 520px) {
   .html {
     font-size: 50%;
+  }
+
+  .page {
+    padding-bottom: 0;
   }
 
   .header {
@@ -183,5 +288,26 @@ nav {
 
   .list {
     flex-direction: column;
+    gap: 3px;
+
+    text-transform: uppercase;
+
+    background-color: #ec615b;
+  }
+
+  .list__link_white {
+    color: white;
+  }
+
+  .section-benefits__nav {
+    margin: auto;
+
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .title {
+    font-size: 3rem;
   }
 }
