@@ -19,7 +19,6 @@ body {
   height: 100%;
 }
 
-/* ======================MAIN PAGE============================== */
 .page {
   max-width: 1440px;
   min-width: 320px;
@@ -32,6 +31,8 @@ body {
   line-height: 160%;
   color: #000;
 }
+
+/* =========================HEADER=============================== */
 
 .header {
   display: flex;
@@ -63,9 +64,13 @@ body {
   cursor: pointer;
 }
 
+/* ==========================END HEADER============================ */
+
 .main {
   padding-left: 8.5%;
 }
+
+/* ==========================SECTION INTRODUCE===================== */
 
 .section-introduse {
   display: flex;
@@ -127,9 +132,9 @@ body {
   object-fit: cover;
 }
 
-/* ======================END MAIN PAGE============================== */
+/* ========================END SECTION INTRODUCE=================== */
 
-/* =========================BENEFITS PAGE========================= */
+/* =========================SECTION BENEFITS========================= */
 .section-benefits {
   max-width: 1240px;
   padding-top: 5%;
@@ -220,6 +225,8 @@ body {
   color: #000;
 }
 
+/* =======================END SECTION BENEFITS======================= */
+
 /* =======================MEDIA QUARIES============================== */
 
 @media screen and (max-width: 1349px) {
@@ -266,9 +273,6 @@ body {
   }
 
   .header {
-    /* flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center; */
     margin-bottom: 20px;
   }
 
